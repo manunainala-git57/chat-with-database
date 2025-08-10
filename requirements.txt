@@ -1,8 +1,10 @@
 streamlit
 
-pathlib
 langchain
-langchain_groq
+langchain-groq
 
 sqlite3
 sqlalchemy
+mysql-connector-python
+
+pathlib
