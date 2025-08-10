@@ -1,0 +1,3 @@
+# helps streamlit avoid installation issues while deploying the app  
+
+python-3.10.0 
