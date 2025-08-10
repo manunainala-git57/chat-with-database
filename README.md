@@ -104,7 +104,7 @@ Results Returned to UI
 
 ![image1](https://github.com/Karthik06-Git/Dummy_Repo/blob/main/output_snaps/img_1.png)
 
-2) After entering GROQ-API key, shows the chat interface (now you chat with the SQL-assistant)
+2) After entering GROQ-API key, it shows the chat interface (now you can chat with the SQL-assistant)
    
 ![image2](https://github.com/Karthik06-Git/Dummy_Repo/blob/main/output_snaps/img_2.png)
 
