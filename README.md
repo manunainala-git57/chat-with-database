@@ -1,4 +1,4 @@
-#  Chat with SQL Database using LangChain & Streamlit
+# 🤖 Chat with SQL Database using LangChain & Streamlit
 
 This project provides an interactive chat interface to query structured data stored in SQL databases (SQLite or MySQL) using **LangChain** with a **GROQ LLaMA-3 model**.  It leverages a natural language interface to convert user questions into SQL queries and retrieve results seamlessly.
 
@@ -41,7 +41,7 @@ Chat_with_SQL_DB/
 
 ---
 
-## How it Works ?
+## ➤ How it Works ?
 
 1. **Select Database Source**  
    - Choose between:
