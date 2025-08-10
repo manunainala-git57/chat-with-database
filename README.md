@@ -78,7 +78,47 @@ Results Returned to UI
 
 ---
 
+## ➤ How to run ?
+
+1. Clone this repository.
+   ```bash
+   git clone https://github.com/Karthik06-Git/Chat_with_SQL_DB
+   ```
+2. Install dependencies by running:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Set up your GROQ_API_KEY in a .env file.
+4. Run the Streamlit app using:
+    ```bash
+    streamlit run app.py
+    ```
+5. Choose between the local SQLite database or provide MySQL connection details to start querying!
+
+---
+
 ### Output snaps :-
+
+1) Initial UI of app (when GROQ-API key is not yet specified)
+
+![image1](https://github.com/Karthik06-Git/Dummy_Repo/blob/main/output_snaps/img_1.png)
+
+2) After entering GROQ-API key, shows the chat interface (now you chat with the SQL-assistant)
+   
+![image2](https://github.com/Karthik06-Git/Dummy_Repo/blob/main/output_snaps/img_2.png)
+
+3) Asking to display all the records present in the student table (from local SQLite-db) 
+
+![image1](https://github.com/Karthik06-Git/Dummy_Repo/blob/main/output_snaps/img_3.png)
+
+4) Asking to get the student names whose marks are greater than 90 
+
+![image1](https://github.com/Karthik06-Git/Dummy_Repo/blob/main/output_snaps/img_4.png)
+
+5) Provide MySQL Database details to use 
+
+![image1](https://github.com/Karthik06-Git/Dummy_Repo/blob/main/output_snaps/img_5.png)
 
 
 
