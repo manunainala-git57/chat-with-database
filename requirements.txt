@@ -5,6 +5,5 @@ pathlib
 langchain
 langchain-groq
 
-sqlite3
 sqlalchemy
 mysql-connector-python
