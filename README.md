@@ -2,6 +2,8 @@
 
 This project provides an interactive chat interface to query structured data stored in SQL databases (SQLite or MySQL) using **LangChain** with a **GROQ LLaMA-3 model**.  It leverages a natural language interface to convert user questions into SQL queries and retrieve results seamlessly.
 
+Demo link :- [streamlit_app](https://karthik06-git-chat-with-sql-db-app-7t3xsi.streamlit.app/)
+
 ---
 
 ## Features
@@ -73,3 +75,13 @@ Database Execution (SQLite/MySQL)
         ↓
 Results Returned to UI
 ```
+
+---
+
+### Output snaps :-
+
+
+
+
+
+
