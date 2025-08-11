@@ -87,17 +87,23 @@ Results Returned to UI
    ```bash
    git clone https://github.com/Karthik06-Git/Chat_with_SQL_DB.git
    ```
-2. Install dependencies by running:
+2. Create and activate a Conda environment
+
+   ```bash
+   conda create -p venv python==3.10 -y
+   conda activate venv/
+   ```
+3. Install dependencies by running:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Set up your GROQ_API_KEY in a .env file.
-4. Run the Streamlit app using:
+4. Set up your GROQ_API_KEY in a .env file.
+5. Run the Streamlit app using:
     ```bash
     streamlit run app.py
     ```
-5. Choose between the local SQLite database or provide MySQL connection details to start querying!
+6. Choose between the local SQLite database or provide MySQL connection details to start querying!
 
 ---
 
