@@ -25,7 +25,7 @@ The deployed app may not support to use MySQL database. If you want to interact 
 
 - **Frontend/UI**: [Streamlit](https://streamlit.io/)  
 - **LLM Orchestration**: [LangChain](https://www.langchain.com/)  
-- **LLM Provider**: [GROQ](https://groq.com/) – using `llama3-8b-8192` model  
+- **LLM Provider**: [GROQ](https://groq.com/) – using `llama-3.3-70b-versatile` model  
 - **Database**: SQLite / MySQL  
 
 ---
@@ -53,7 +53,7 @@ Chat_with_SQL_DB
      - **SQLite** (`student.db`) – included in the repo and generated via `sqlite.py`
      - **MySQL** – requires host, user, password, and database name
 2. **Enter GROQ API Key**  
-   - Required to run the LLaMA-3 model via `ChatGroq`
+   - Required to run the LLaMA-3.3 model via `ChatGroq`
 3. **LLM Initialization**  
    - The selected model is wrapped by LangChain to process queries and generate SQL
 4. **Database Connection**  
