@@ -6,6 +6,7 @@ from langchain.sql_database import SQLDatabase
 from langchain.agents.agent_types import AgentType
 from langchain.callbacks import StreamlitCallbackHandler
 from langchain.agents.agent_toolkits import SQLDatabaseToolkit
+from langchain.prompts import PromptTemplate
 from sqlalchemy import create_engine
 import sqlite3
 from langchain_groq import ChatGroq
@@ -43,7 +44,9 @@ if not api_key:
 if api_key:
     llm = ChatGroq(
         groq_api_key=api_key, 
-        model_name="llama3-8b-8192",
+        model_name="llama-3.3-70b-versatile",
+        temperature=0,
+        max_tokens=256,
         streaming=True
     )
 else:
@@ -70,22 +73,32 @@ elif db_uri == MYSQL:
     db = configure_db(db_uri, mysql_host, mysql_user, mysql_password, mysql_db)
 
 
-## Agent Toolkit
+
+
+## SQL Agent Toolkit
 
 toolkit = SQLDatabaseToolkit(db=db, llm=llm)
 
 agent = create_sql_agent(
     llm=llm,
     toolkit=toolkit,
-    agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION
+    agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
+    verbose=True,
+    handle_parsing_errors=True
 )
 
+
+
+
+# Chat Memory Management
 
 if "messages" not in st.session_state or st.sidebar.button("Clear message history"):
     st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
 
 for msg in st.session_state["messages"]:
     st.chat_message(msg["role"]).write(msg["content"])
+
+
 
 
 user_query = st.chat_input(placeholder="Ask anything from the database...")
