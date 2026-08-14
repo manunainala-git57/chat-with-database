@@ -30,6 +30,30 @@ The deployed app may not support to use MySQL database. If you want to interact 
 
 ---
 
+## Architecture
+```
+User
+ ↓
+Streamlit UI
+ ↓
+LangChain SQL Agent
+ ↓
+LLaMA 3 (GROQ)
+ ↓
+SQL Query
+ ↓
+SQLAlchemy
+ ↓
+SQLite / MySQL
+ ↓
+Query Result
+ ↓
+Streamlit UI
+
+
+```
+---
+
 ## Project Structure
 
 ```
