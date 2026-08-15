@@ -2,7 +2,6 @@
 
 This project provides an interactive chat interface to query structured data stored in SQL databases (SQLite or MySQL) using **LangChain** with a **GROQ LLaMA-3 model**.  It leverages a natural language interface to convert user questions into SQL queries and retrieve results seamlessly.
 
-Demo link :- [streamlit_app](https://karthik06-git-chat-with-sql-db-app-7t3xsi.streamlit.app/)
 
 The deployed app may not support to use MySQL database. If you want to interact with your specific MySQL database server, first setup the project in the local machine and then run it. 
 
@@ -109,7 +108,7 @@ Results Returned to UI
 
 1. Clone this repository.
    ```bash
-   git clone https://github.com/Karthik06-Git/Chat_with_SQL_DB.git
+   git clone https://github.com/manunainala-git57/chat-with-database.git
    ```
 2. Create and activate a Conda environment
 
